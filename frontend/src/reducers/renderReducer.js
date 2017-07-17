@@ -6,9 +6,7 @@ const renderReducer = (state = initialRender, action) => {
 
   switch (action.type) {
     case "RENDER_HOME_UPDATE":
-
         return [action.renderWait]
-
         break;
 
     default:

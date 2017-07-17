@@ -10,7 +10,7 @@ import userController from '../controllers/userController';
 import User from '../models/User';
 
 /* GET index page. */
-router.get('/', homeController.renderIndexPage);     //URL - http://localhost:3000/
+router.get('/', homeController.renderIndexPage);
 
 
 router.get('/logout',(req,res,next)=>{
@@ -19,7 +19,7 @@ router.get('/logout',(req,res,next)=>{
 
 });
 
-// update preference on start button click 
+// update preference on start button click
 router.put('/user', userController.updatePreferences);
 
 /*Execute GET call for /home to get user data*/

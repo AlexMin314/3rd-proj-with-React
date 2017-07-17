@@ -32,7 +32,6 @@ import axios from 'axios';
 const modalStyles = {
   content : {
     backgroundColor: "#232222",
-    border: "2px solid #E26A6A",
     top: '50%',
     left: '50%',
     right: 'auto',
@@ -161,7 +160,7 @@ export class Room extends Component { // eslint-disable-line react/prefer-statel
           <div className="mainBox">
           {/* This is room screen */}
           <Header/>
-          <div className="row roomBody">
+          <div className="row" id="roomBody">
             <div className="col-md-2 leftCol">
               {/* UserList Grid Separated from room */}
               <Userlist/>

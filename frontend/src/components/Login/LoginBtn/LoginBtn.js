@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 // Import static files
-import '../../../bootstrap-social.css';
+import '../../../libs/bootstrap-social.css';
 import './LoginBtn.css';
 
 // Import Action.
@@ -34,19 +34,28 @@ export class LoginBtn extends Component { // eslint-disable-line react/prefer-st
   render() {
 
     return (
-      <div className="socialBtn">
-        <a className="btn-lg btn-social btn-facebook" onClick= {this.facebookLogin}>
-          <span className="fa fa-facebook"></span>
-          Sign in with Facebook
-        </a>
-        <a className="btn-lg btn-social btn-google" onClick= {this.googleLogin}>
-          <span className="fa fa-google"></span>
-          Sign in with Google
-        </a>
-        <a className="btn-lg btn-social btn-twitter" onClick= {this.twitterLogin}>
-          <span className="fa fa-twitter"></span>
-          Sign in with Twitter
-        </a>
+      <div className="socialBtn col-xs-12">
+        <div className="socialBtnCircle">
+  				<div className="icon-circle">
+  					<a onClick={this.facebookLogin} className="ifacebook">
+              <i className="fa fa-facebook"></i>
+            </a>
+  				</div>
+  			</div>
+  			<div className="socialBtnCircle">
+  				<div className="icon-circle">
+  					<a onClick={this.googleLogin} className="itwittter">
+              <i className="fa fa-twitter"></i>
+            </a>
+  				</div>
+  			</div>
+  			<div className="socialBtnCircle">
+  				<div className="icon-circle">
+  					<a onClick={this.twitterLogin} className="igoogle">
+              <i className="fa fa-google-plus"></i>
+            </a>
+  				</div>
+  			</div>
       </div>
     );
   }

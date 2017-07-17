@@ -6,9 +6,7 @@ const fetchingReducer = (state = initialFetch, action) => {
 
   switch (action.type) {
     case "FETCHER_UPDATE":
-
         return [action.isFetching]
-
         break;
 
     default:

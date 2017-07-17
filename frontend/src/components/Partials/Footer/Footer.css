@@ -2,6 +2,7 @@
   width: 100%;
   color: white;
   flex: 0 0 auto;
+  padding-bottom: 10px;
 }
 
 .footer-content-left {
@@ -14,6 +15,7 @@
   float: right;
   text-decoration: none !important;
   color: rgb(83, 200, 221);
+  padding: 10px 0;
 }
 
 .footer-content-right:hover {
