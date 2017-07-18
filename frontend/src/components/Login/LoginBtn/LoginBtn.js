@@ -44,14 +44,14 @@ export class LoginBtn extends Component { // eslint-disable-line react/prefer-st
   			</div>
   			<div className="socialBtnCircle">
   				<div className="icon-circle">
-  					<a onClick={this.googleLogin} className="itwittter">
+  					<a onClick={this.twitterLogin} className="itwittter">
               <i className="fa fa-twitter"></i>
             </a>
   				</div>
   			</div>
   			<div className="socialBtnCircle">
   				<div className="icon-circle">
-  					<a onClick={this.twitterLogin} className="igoogle">
+  					<a onClick={this.googleLogin} className="igoogle">
               <i className="fa fa-google-plus"></i>
             </a>
   				</div>

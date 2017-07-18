@@ -24,10 +24,8 @@ module.exports = (io) => {
 
   io.on('connection', (socket) => {
 
-      console.log("On connection roomlist: " + roomsList);
     // Initialise empty user object which is to be manipulated with socket
     const user = {};
-    // If socket is connected with passport, push new user obj to arry
 
 
     if (socket.request.user.logged_in) {
@@ -236,7 +234,7 @@ module.exports = (io) => {
           /* Set room to full based on number of users */
           var comparisonScore = Math.abs(user.preferenceScore - roomsList[i].preferenceScore)
 
-          if(roomsList[i].userNumber == 3){
+          if(roomsList[i].userNumber == 3){ // limitation
 
             roomsList[i].roomFull = true;
 
