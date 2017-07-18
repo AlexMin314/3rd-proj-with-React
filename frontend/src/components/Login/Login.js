@@ -15,7 +15,7 @@ export class Login extends Component { // eslint-disable-line react/prefer-state
 
   render() {
     return (
-      <div className="loginpage">
+      <div className="loginpage container-fluid">
         {/* If render status:true OR loginUserInfo: false -> nothing rendered*/}
         {/* If isFetching:ture -> render loading page */}
         { !this.props.renderWait[0] || this.props.user[0] ? (
@@ -29,9 +29,11 @@ export class Login extends Component { // eslint-disable-line react/prefer-state
             <div className="flexWrapper">
             {/* This is Login Screen*/}
             <div className="flexBody">
-              <div className="title row"> teaTime</div>
-              <div className="subtitle row"> live video chat that keeps getting better</div>
-              <div className="login row">
+              <div id="mainWrapper">
+                <div className="title col-xs-12">teaTime</div>
+                <div className="subtitle col-xs-12">
+                  live video chat that keeps getting better
+                </div>
                 <LoginBtn/>
               </div>
             </div>

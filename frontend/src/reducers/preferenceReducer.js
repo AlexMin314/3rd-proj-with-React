@@ -1,6 +1,5 @@
 import { setPreferences, getPreferences } from '../API/preferenceAPI';
 
-// will change later to grab from server. for now it is empty array
 const initialPreferences = getPreferences();
 
 const preferences = (state = initialPreferences, action) =>{

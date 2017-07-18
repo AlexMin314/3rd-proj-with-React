@@ -1,20 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App/App';
 import registerServiceWorker from './registerServiceWorker';
 
+// Redux
+import { Provider } from 'react-redux';
+import { initStore } from './store/Store';
+
+// components
+import App from './components/App/App';
+
+// APIs
 import { setPreferences, getPreferences } from './API/preferenceAPI';
 import { setUsers } from './API/userAPI';
 import { setRooms, getRooms } from './API/roomAPI';
 import { setFetching, getFetching } from './API/fetchingAPI';
 import { setRender } from './API/renderAPI';
 
-// Redux
-import { Provider } from 'react-redux';
-import { initStore } from './store/Store';
 // Actions
 import { getUser } from './actions/userActions';
+
+// Import static files
+import './index.css';
+
 
 const store = initStore();
 

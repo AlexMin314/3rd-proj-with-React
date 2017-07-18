@@ -13,16 +13,3 @@ export const deletePreference = (preference) => {
     preference
   }
 }
-
-// export const addPreference = () => {
-//   return (dispatch) => {
-//     dispatch(addPreferenceToStore(preference));
-//     axios.post('/user', preference)
-//       .then( (response) => {
-//         console.log('successful post', response);
-//       })
-//       .catch((error)=> {
-//         throw error;
-//       });
-//   };
-// }
